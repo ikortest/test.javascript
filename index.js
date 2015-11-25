@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // Start the app and visit the following URLs
 // Path Injection - http://localhost:3000/..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc
-
+/*
 function getUserHomeDirectory(username) {
     console.log("Resolving " + username + " to home directory");
     return path.resolve(__dirname, 'home', username);
@@ -37,7 +37,7 @@ app.get('/safepath/:username', function(req, res) {
         res.send('Invalid username');
     }
 });
-
+*/
 // ======= for httpOnly session test =======
 require('./httponlysession/test.explicitly-set-httponly')(app, expSess);
 //require('./httponlysession/test.missing-httponly')(app, expSess);
